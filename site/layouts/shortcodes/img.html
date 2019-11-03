@@ -1,0 +1,17 @@
+{{/* Render a img tag with a version of the image downscaled to |width| */}}
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+
+{{ $width := default 500 }}
+
+{{ $img1x := $src.Resize ($width | printf "%dx") }}
+{{ $img2x := $src.Resize ((mul 2 $width) | printf "%dx") }}
+
+<img
+  srcset='
+    {{- with $img1x.RelPermalink }}{{.}} 1x, {{ end -}}
+    {{- with $img2x.RelPermalink }}{{.}} 2x {{ end -}}'
+  src="{{ with $img1x.RelPermalink }}{{.}}{{ end }}"
+  {{ with .Get "alt" }}alt='{{.}}' {{ end }}
+  {{ with .Get "title" }}title='{{.}}' {{ end }}
+  {{ with .Get "class" }}class='{{.}}' {{ end }}
+>
