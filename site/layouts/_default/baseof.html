@@ -13,6 +13,7 @@
     <link href="{{ relURL . }}" rel="stylesheet">
   {{ end }}
 
+  {{ block "analytics" . }}{{ partial "analytics" . }}{{end}}
 </head>
 
 <body>
