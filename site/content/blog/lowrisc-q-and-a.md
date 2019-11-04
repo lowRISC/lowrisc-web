@@ -11,6 +11,6 @@ thread](https://news.ycombinator.com/item?id=13129076) became something of an
 impromptu Q+A about our project direction and status. I thought it was worth 
 linking to it here and highlighting the discussion for a wider audience. If 
 you have any additional questions, then feel free to comment on this blog post 
-or else, as always, drop by our [mailing list]({{< ref "community.md" >}}).
+or else, as always, drop by our [mailing list]({{< ref "community" >}}).
 
 _Alex Bradbury_

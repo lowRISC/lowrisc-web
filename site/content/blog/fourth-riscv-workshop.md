@@ -9,7 +9,7 @@ been in Boston this week for the fourth RISC-V workshop. By any measure, this
 has been a massive success with over 250 attendees representing 63 companies 
 and 42 Universities. Wei presented our most recent work on integrating trace 
 debug, which you'll soon be able to read much more about here (it's worth 
-signing up to our [announcement list]({{< ref "about.md" >}}) if you want to 
+signing up to our [announcement list]({{< ref "about" >}}) if you want to
 be informed of each of our releases).
 
 ## RISC-V Foundation update: Rick O'Connor

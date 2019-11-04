@@ -18,7 +18,7 @@ users, this also makes it significantly easier for e.g. Rust/Julia/Swift and
 other languages using LLVM for code generation to do so using the
 system-provided LLVM libraries. This will make life easier for those working on
 RISC-V ports of Linux distros encountering issues with Rust dependencies. As
-[Sam mentioned yesterday]({{< ref "introducing-sam.md" >}}), we aim to work with the upstream
+[Sam mentioned yesterday]({{< ref "blog/introducing-sam" >}}), we aim to work with the upstream
 Rust community to help unblock this. 9.0 will branch on the 18th of July with
 the release scheduled for the 28th of August.
 
@@ -65,10 +65,10 @@ Support for RISC-V in LLVM is important for the wider RISC-V ecosystem and at
 lowRISC, we're proud of the role we've played in initiating its development,
 driving it forwards, and building a community around it. As an independent
 non-profit engineering organisation, we're uniquely positioned to perform this
-kind of work - [it's what we do]({{< ref "our-work.md" >}}). Our toolchain team has
+kind of work - [it's what we do]({{< ref "our-work" >}}). Our toolchain team has
 grown to include Luís Marques and Sam Elliott as well as myself and we are
 always interested in hearing from skilled engineers who’d like to [join our
-team]({{< ref "jobs.md" >}}). If you're interested in further supporting this work
+team]({{< ref "jobs" >}}). If you're interested in further supporting this work
 or in applying a similar approach to other open source hardware/software
 projects then get in touch at info@lowrisc.org.
 

@@ -53,7 +53,7 @@ a sustainable open source hardware ecosystem. In addition to engineering
 resources, lowRISC provides the community stewardship that is vital to this
 vision,” said Royal Hansen, vice president of Security, Google.
 
-Please visit our [jobs]({{< ref "jobs.md" >}}) page for more
+Please visit our [jobs]({{< ref "jobs" >}}) page for more
 information on how lowRISC is expanding our engineering organization.
 
 ## About lowRISC

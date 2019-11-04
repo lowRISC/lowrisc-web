@@ -8,7 +8,7 @@ title = "Six more weeks of Ibex development - what's new?"
 In the past months, we have invested considerable effort in improving our
 RISC-V core [Ibex](https://github.com/lowRISC/ibex/). This 2-stage, in-order,
 32-bit microcontroller-class CPU core was [contributed to us]({{<
-ref "an-update-on-ibex-our-microcontroller-class-cpu-core.md" >}}) by ETH Zürich in
+ref "blog/an-update-on-ibex-our-microcontroller-class-cpu-core" >}}) by ETH Zürich in
 December 2018, with activity really ramping up since May. Having been taped out
 multiple times (as zero-riscy) in a mix of academic and industry projects, it
 came to us as a relatively mature code base. Despite this, we have continued to
@@ -83,6 +83,6 @@ GitHub! Our next priorities support for [Physical Memory Protection
 
 But why stop there? You can make hacking on Ibex and other exciting projects
 your day job! lowRISC is hiring, and you can find details on all of our current
-roles on our [jobs page]({{< ref "jobs.md" >}}).
+roles on our [jobs page]({{< ref "jobs" >}}).
 
 _Philipp Wagner and Pirmin Vogel_
