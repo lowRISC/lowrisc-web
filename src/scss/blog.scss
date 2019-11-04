@@ -16,3 +16,8 @@
 .lr-blog-list h2 > a {
   color: $color-lowrisc-charcoal;
 }
+
+.lr-blog img {
+  // Ensure all blog images are responsive: only as wide as the viewport
+  @include img-fluid;
+}
