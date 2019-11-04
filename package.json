@@ -13,10 +13,11 @@
     "preview:hugo": "yarn run start:hugo -- -D -F",
     "preview:webpack": "yarn run start:webpack",
     "prebuild": "rimraf dist",
+    "build-production": "cross-env HUGO_BASEURL=https://www.lowrisc.org yarn build",
     "build": "yarn run build:webpack && yarn run build:hugo",
     "build:preview": "yarn run build:webpack && yarn run build:hugo:preview",
-    "build:hugo": "hugo -d ../dist --minify -s site -v",
-    "build:hugo:preview": "yarn run build:hugo -- -D -F -b $DEPLOY_PRIME_URL",
+    "build:hugo": "hugo -d ../dist --minify -s site -v -b $HUGO_BASEURL",
+    "build:hugo:preview": "yarn run build:hugo -- -D -F -b $HUGO_BASEURL",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
   },
   "author": "lowRISC Contributors",

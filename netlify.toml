@@ -3,12 +3,9 @@
   NPM_VERSION = "6.4.1"
   HUGO_VERSION = "0.59.0"
 
-[context.production.environment]
-  HUGO_BASEURL = "https://www.lowrisc.org/"
-
 [build]
   command = "yarn run build"
   publish = "dist"
 
 [context.deploy-preview]
-  command = "yarn run build:preview"
+  command = "HUGO_BASEURL=$DEPLOY_PRIME_URL yarn run build:preview"
