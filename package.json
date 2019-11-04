@@ -16,7 +16,7 @@
     "build": "yarn run build:webpack && yarn run build:hugo",
     "build:preview": "yarn run build:webpack && yarn run build:hugo:preview",
     "build:hugo": "hugo -d ../dist --minify -s site -v",
-    "build:hugo:preview": "yarn run build:hugo -- -D -F -b \"$DEPLOY_PRIME_URL\"",
+    "build:hugo:preview": "yarn run build:hugo -- -D -F -b $DEPLOY_PRIME_URL",
     "build:webpack": "cross-env NODE_ENV=production webpack --config webpack.prod.js"
   },
   "author": "lowRISC Contributors",
