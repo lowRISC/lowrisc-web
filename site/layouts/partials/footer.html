@@ -1,4 +1,4 @@
-<div class="lowrisc-nav-footer jumbotron">
+<div class="lr-nav-footer jumbotron">
   <div class="container">
     <div class="row">
       <div class="col-sm-4">
@@ -8,11 +8,11 @@
       {{ $currentPage := . }}
       {{- range sort .Site.Menus.main }}
       <div class="col">
-        <h2><a class="lowrisc-nav-footer-mainitem" href="{{ .URL | relLangURL }}">{{ .Name }}</a></h2>
+        <h2><a class="lr-nav-footer-mainitem" href="{{ .URL | relLangURL }}">{{ .Name }}</a></h2>
 
         <ul>
           {{ range .Children }}
-          <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+          <li class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}'>
             <a href="{{ .URL }}">{{ .Name }}</a>
           </li>
           {{ end }}
