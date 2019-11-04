@@ -22,3 +22,9 @@ $navbar-padding-y: .7rem;
   font-size: 1.1em;
   font-weight: bold;
 }
+
+.lr-navbar-btn-gh {
+  @include button-outline-variant($color-lowrisc-pink);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
