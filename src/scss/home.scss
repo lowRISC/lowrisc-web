@@ -7,11 +7,22 @@
 @import "variables";
 
 .lr-home-mainjumbo {
-  background-image: url('/img/home/home-board.png');
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 50%;
   background-color: $color-lowrisc-charcoal;
+}
+
+// Only display board background at certain sizes
+@include media-breakpoint-up(md) {
+  .lr-home-mainjumbo {
+    background-image: url('/img/home/home-board.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    background-color: $color-lowrisc-charcoal;
+
+    p.lead {
+      width: 45vw;
+    }
+  }
 }
 
 .lr-home-mainjumbo h1.lr-home-mainjumbo {
