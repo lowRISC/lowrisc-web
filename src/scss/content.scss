@@ -50,3 +50,8 @@ h2.lr-sectionheader-left {
     font-size: 50px;
   }
 }
+
+// Don't extend floats beyond the main area into the footer.
+main {
+  @include clearfix;
+}

@@ -1,0 +1,14 @@
+{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
+<div class="container">
+  <article>
+    <h1>{{.Title}}</h1>
+    <address class="lr-blog-author">
+      {{ if isset .Params "author" }}
+        by {{ .Params.author }},
+      {{ end }}
+      <time>{{ .PublishDate.Format "January 2, 2006" }}</time>
+    </address>
+      {{- .Content -}}
+  </article>
+</div>
+{{ end }}

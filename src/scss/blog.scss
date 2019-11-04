@@ -1,0 +1,18 @@
+@import "variables";
+
+.lr-blog-list-pagination {
+  margin-top: 3rem;
+}
+
+.lr-blog-list-pagination > ul {
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.lr-blog-list article {
+  margin-bottom: 2rem;
+}
+
+.lr-blog-list h2 > a {
+  color: $color-lowrisc-charcoal;
+}

@@ -11,6 +11,14 @@ disableHugoGeneratorInject = true
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
 
+# Don't fail build if links are broken, only warn.
+refLinksErrorLevel = "WARNING"
+
+[blackfriday]
+plainIDAnchors = false
+
+[permalinks]
+blog="/blog/:year/:month/:slug"
 
 [[menu.main]]
   url = "/our-work"
@@ -33,7 +41,7 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
   weight = 23
 
 [[menu.main]]
-  url = "/blog-posts"
+  url = "/blog"
   name = "Blog"
   weight = 30
 

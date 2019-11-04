@@ -1,0 +1,28 @@
+{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
+<div class="container lr-blog lr-blog-list">
+  <h1>The lowRISC blog</h1>
+
+  <p class="lead">A lot is going on in lowRISC land. Have a look at our blog for news about lowRISC, and insight into the engineering we do.</p>
+
+  {{ range .Paginator.Pages }}
+  <article>
+    <!-- this <div> includes the title summary -->
+    <div>
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      {{ .Summary }}
+    </div>
+
+    {{ if .Truncated }}
+    <div>
+      <a href="{{ .RelPermalink }}">Read More…</a>
+    </div>
+    {{ end }}
+  </article>
+  {{ end }}
+
+  <div class="lr-blog-list-pagination">
+    {{ template "_internal/pagination.html" . }}
+  </div>
+
+</div>
+{{ end }}
