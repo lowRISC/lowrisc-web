@@ -20,9 +20,12 @@ plainIDAnchors = false
 [permalinks]
 blog="/blog/:year/:month/:slug"
 
+# Turn of RSS except for home
 [outputs]
 home = ["html", "RSS"]
-page = ["html"]
+section = ["html"]
+taxonomyTerm = ["html"]
+taxonomy = ["html"]
 
 [[menu.main]]
   url = "/our-work"
