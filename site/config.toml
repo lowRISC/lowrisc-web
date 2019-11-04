@@ -1,7 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "lowRISC: Collaborative sustainable engineering"
+title = "lowRISC: Collaborative open silicon engineering"
 
 # Do not include generator meta-tag in HTML
 disableHugoGeneratorInject = true
