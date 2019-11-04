@@ -8,6 +8,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
   <title>{{ $.Site.Title }}</title>
 
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
   {{ $stylesheet := .Site.Data.webpack.main }}
   {{ with $stylesheet.css }}
     <link href="{{ relURL . }}" rel="stylesheet">

@@ -9,7 +9,7 @@ disableHugoGeneratorInject = true
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
-disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
 # Don't fail build if links are broken, only warn.
 refLinksErrorLevel = "WARNING"
@@ -19,6 +19,10 @@ plainIDAnchors = false
 
 [permalinks]
 blog="/blog/:year/:month/:slug"
+
+[outputs]
+home = ["html", "RSS"]
+page = ["html"]
 
 [[menu.main]]
   url = "/our-work"
