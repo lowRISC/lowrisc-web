@@ -28,7 +28,7 @@ blog="/blog/:year/:month/:slug"
 [[menu.main]]
   url = "/jobs"
   name = "Jobs"
-  weight = 21
+  weight = 35
 
 [[menu.main]]
   url = "/community"
@@ -38,7 +38,7 @@ blog="/blog/:year/:month/:slug"
 [[menu.main]]
   url = "/open-silicon"
   name = "Open Silicon"
-  weight = 23
+  weight = 21
 
 [[menu.main]]
   url = "/blog"
