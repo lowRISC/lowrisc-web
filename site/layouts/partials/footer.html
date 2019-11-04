@@ -1,32 +1,16 @@
-<div class="lr-nav-footer jumbotron">
+<div class="lr-footer jumbotron">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <img src="/img/logo/logo-white.svg" style="width: 100px" />
+      <div class="col-sm-4 pb-3 pb-sm-0">
+        <img src="/img/logo/logo-dualcolor.svg" width="150px" />
       </div>
 
-      {{ $currentPage := . }}
-      {{- range sort .Site.Menus.main }}
       <div class="col">
-        <h2><a class="lr-nav-footer-mainitem" href="{{ .URL | relLangURL }}">{{ .Name }}</a></h2>
-
-        <ul>
-          {{ range .Children }}
-          <li class='{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}'>
-            <a href="{{ .URL }}">{{ .Name }}</a>
-          </li>
-          {{ end }}
-        </ul>
+        <p>
+          The text content on this website is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, except where otherwise noted. No license is granted for logos or other trademarks. Other content &copy; lowRISC Contributors.
+          &middot; <a href="/privacy-policy">Privacy and cookies policy</a> &middot; <a href="/usage-licence">Usage licence</a> &middot; <a href="#">Back to top</a>
+        </p>
       </div>
-      {{- end -}}
     </div>
   </div>
 </div>
-
-<footer class="container">
-  <p class="float-right"><a href="#">Back to top</a></p>
-  <p>
-The text content on this website is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, except where otherwise noted. No license is granted for logos or other trademarks.&middot; Other content &copy; lowRISC Contributors &middot;
-
-     <a href="/privacy-policy">Privacy and cookies policy</a> &middot; <a href="/usage-licence">Usage licence</a></p>
-</footer>

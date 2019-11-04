@@ -5,14 +5,10 @@
 @import "variables";
 
 // Navigation footer
-.lr-nav-footer {
+.lr-footer {
   background-color: $color-lowrisc-grey;
-}
-.lr-nav-footer h2 {
-  line-height: 1rem;
-}
 
-.lr-nav-footer h2 a {
-  font-size: 1rem;
-  color: $color-lowrisc-charcoal;
+  img {
+    width: 150px;
+  }
 }
