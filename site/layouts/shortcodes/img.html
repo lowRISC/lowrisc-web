@@ -1,7 +1,15 @@
 {{/* Render a img tag with a version of the image downscaled to |width| */}}
 {{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
 
-{{ $width := or (.Get "width") 500 }}
+{{ $requestedWidth := or (.Get "width") 500 }}
+
+{{ $img := imageConfig (printf "content/%s/%s" $.Page.Dir $src ) }}
+{{ $width := $requestedWidth }}
+
+{{/* Do not upscale image in 1x version. */}}
+{{ if gt $requestedWidth $img.Width }}
+  {{ $width = $img.Width }}
+{{ end }}
 
 {{ $img1x := $src.Resize ($width | printf "%dx") }}
 {{ $img2x := $src.Resize ((mul 2 $width) | printf "%dx") }}
