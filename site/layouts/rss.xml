@@ -5,15 +5,15 @@
     <description>Recent blog posts from lowRISC</description>
     {{ with .Site.LanguageCode }}<language>{{.}}</language>{{end}}
     {{ if not .Date.IsZero }}<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
-    <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />
-    <copyright>{{ `<![CDATA[` | safeHTML }} The text content on this website is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>, except where otherwise noted. No license is granted for logos or other trademarks. Other content &copy; lowRISC Contributors. ]]></copyright>
+    <atom:link href="{{ .URL }}" rel="self" type="application/rss+xml" />
+    <copyright>{{ `<![CDATA[` | safeHTML }} The text content on this website is licensed under a Creative Commons Attribution 4.0 International License, except where otherwise noted. No license is granted for logos or other trademarks. Other content &copy; lowRISC Contributors. ]]></copyright>
     {{ range where .Site.RegularPages "Type" "blog" }}
     <item>
       <title>{{ .Title }}</title>
       <link>{{ .Permalink }}</link>
       <guid>{{ .Permalink }}</guid>
       <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-      {{ with .Params.author }}<author>{{.}}</author>{{end}}
+      {{ with .Params.author }}<author>info@lowrisc.org ({{.}})</author>{{end}}
       <description>{{ `<![CDATA[` | safeHTML }} {{ .Content | safeHTML }} ]]></description>
     </item>
     {{ end }}
