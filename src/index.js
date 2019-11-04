@@ -6,5 +6,6 @@
 // See available modules at https://getbootstrap.com/docs/4.3/getting-started/webpack/
 //import "bootstrap";
 import "bootstrap/js/dist/collapse";
+import "@fortawesome/fontawesome-free/css/brands.css";
 
 import "./scss/app.scss";
