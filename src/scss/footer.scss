@@ -1,0 +1,18 @@
+// Copyright lowRISC contributors.
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+
+@import "variables";
+
+// Navigation footer
+.lr-nav-footer {
+  background-color: $color-lowrisc-grey;
+}
+.lr-nav-footer h2 {
+  line-height: 1rem;
+}
+
+.lr-nav-footer h2 a {
+  font-size: 1rem;
+  color: $color-lowrisc-charcoal;
+}
