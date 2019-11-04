@@ -115,6 +115,6 @@ role and how it fits with things I’ve been working on.)"
 We're thrilled to have Pirmin and Laura join the lowRISC team and if you'd like
 to be part of the open source silicon revolution, we presently have a number
 of openings and I'd encourage you to take a look at the [jobs page]({{< ref
-"jobs.md" >}}).
+"jobs" >}}).
 
 _Alex Bradbury, CTO and Co-Founder_

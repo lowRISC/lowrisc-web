@@ -62,7 +62,7 @@ RISC-V and quickly get started on the platform."
 
 We're excited to have Sam join our team and help further accelerate our
 toolchain and LLVM-related efforts. If you're interested in joining us on our
-mission, check out our [jobs page]({{< ref "jobs.md" >}}) for details on
+mission, check out our [jobs page]({{< ref "jobs" >}}) for details on
 positions we are looking to fill.
 
 _Alex Bradbury, CTO and Co-Founder_

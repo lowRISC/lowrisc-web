@@ -6,7 +6,7 @@ title = "Onwards and upwards at lowRISC"
 +++
 
 If you haven't checked it out yet, be sure to take a look at our [press
-release]({{< ref "lowrisc-expands-press-release.md" >}}) and the
+release]({{< ref "blog/lowrisc-expands-press-release" >}}) and the
 [corresponding Google blog
 post](https://opensource.googleblog.com/2019/05/google-fosters-open-source-hardware.html).
 This industry support and growth of our board is a huge step forwards for
@@ -29,14 +29,14 @@ Google and other industry partners. Plus of course we’re continuing to lead th
 
 Over the last 6 months we've really entered a new phase of the lowRISC mission.
 We've grown from a single full-time engineer to five, with more on their way
-(check out our [active job adverts]({{< ref "jobs.md" >}}) - we'd love to hear
+(check out our [active job adverts]({{< ref "jobs" >}}) - we'd love to hear
 from you!). We've not been able to put out anywhere near as many updates as
 we'd like. The work we've been doing to grow the organisation and forge new
 collaborations is hugely time consuming, and of course embargos etc. come in to
 play. But you can expect to hear much more from us going forwards.
 
 On a final note, I'd like to shine the spotlight on the [whole lowRISC
-family]({{< ref "about.md" >}}), especially those who have helped us get this far. In
+family]({{< ref "about" >}}), especially those who have helped us get this far. In
 particular I’d like to thank our board of directors, our growing team of full
 time staff, our technical advisory board, and of course the wider community
 who have given us so much support, suggestions, and encouragement. Pirmin and

@@ -70,6 +70,6 @@ forward to what the future holds!"
 
 We’re thrilled to have Greg and Tom onboard to help propel our open source
 hardware efforts forward. We have a number of open job openings - take a look at
-our  [jobs page]({{< ref "jobs.md" >}}) to find out more.
+our  [jobs page]({{< ref "jobs" >}}) to find out more.
 
 _Alex Bradbury, CTO and Co-Founder_
