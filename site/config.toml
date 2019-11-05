@@ -16,6 +16,9 @@ refLinksErrorLevel = "WARNING"
 
 timeout = 30000 #ms
 
+# Don't pluralize "blog" into "blogs" for blog list title
+pluralizeListTitles = false
+
 [blackfriday]
 plainIDAnchors = false
 
