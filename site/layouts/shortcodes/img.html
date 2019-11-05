@@ -3,23 +3,50 @@
 
 {{ $requestedWidth := or (.Get "width") 500 }}
 
-{{ $img := imageConfig (printf "content/%s/%s" $.Page.Dir $src ) }}
-{{ $width := $requestedWidth }}
+{{ $srcExt := path.Ext $src }}
 
-{{/* Do not upscale image in 1x version. */}}
-{{ if gt $requestedWidth $img.Width }}
-  {{ $width = $img.Width }}
+{{ if (.Get "caption") }}
+  <figure class='figure {{- with .Get "figure-class" }}{{.}}{{ end -}}'>
 {{ end }}
 
-{{ $img1x := $src.Resize ($width | printf "%dx") }}
-{{ $img2x := $src.Resize ((mul 2 $width) | printf "%dx") }}
-
+{{ if eq $srcExt ".svg" }}
 <img
-  srcset='
-    {{- with $img1x.RelPermalink }}{{.}} 1x, {{ end -}}
-    {{- with $img2x.RelPermalink }}{{.}} 2x {{ end -}}'
-  src="{{ with $img1x.RelPermalink }}{{.}}{{ end }}"
+  src="{{ with $src.Permalink }}{{.}}{{ end }}"
   {{ with or (.Get "alt") (.Get "title") }}alt='{{.}}' {{ end }}
   {{ with or (.Get "title") (.Get "alt") }}title='{{.}}' {{ end }}
-  {{ with .Get "class" }}class='{{.}}' {{ end }}
+  width='{{- with $requestedWidth }}{{.}} {{ end -}}'
+  class='
+    {{- with .Get "class" }}{{.}} {{ end -}}
+    {{- if .Get "caption" }}figure-img {{ end -}}
+  '
 >
+{{ else }}
+  {{ $img := imageConfig (printf "content/%s/%s" $.Page.Dir $src ) }}
+  {{ $width := $requestedWidth }}
+
+  {{/* Do not upscale image in 1x version. */}}
+  {{ if gt $requestedWidth $img.Width }}
+    {{ $width = $img.Width }}
+  {{ end }}
+
+  {{ $img1x := $src.Resize ($width | printf "%dx") }}
+  {{ $img2x := $src.Resize ((mul 2 $width) | printf "%dx") }}
+
+  <img
+    srcset='
+      {{- with $img1x.Permalink }}{{.}} 1x, {{ end -}}
+      {{- with $img2x.Permalink }}{{.}} 2x {{ end -}}'
+    src="{{ with $img1x.Permalink }}{{.}}{{ end }}"
+    {{- with or (.Get "alt") (.Get "title") }}alt='{{.}}' {{ end -}}
+    {{- with or (.Get "title") (.Get "alt") }}title='{{.}}' {{ end -}}
+    class='
+      {{- with .Get "class" }}{{.}} {{ end -}}
+      {{- if .Get "caption" }}figure-img {{ end -}}
+    '
+  >
+{{ end }}
+
+{{ if (.Get "caption") }}
+    <figcaption class="figure-caption">{{ with .Get "caption" }}{{.}}{{ end }}</figcaption>
+  </figure>
+{{ end }}
