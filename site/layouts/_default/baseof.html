@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
-  <title>{{with .Title }}{{.}} &middot; {{end}}{{ $.Site.Title }}</title>
+  <title>{{block "title" . }}{{.Title}} &middot; {{ $.Site.Title }}{{end}}</title>
 
   {{ with .OutputFormats.Get "rss" -}}
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
