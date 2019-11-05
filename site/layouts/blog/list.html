@@ -3,18 +3,29 @@
   <h1>The lowRISC blog</h1>
 
   {{ range .Paginator.Pages }}
-  <article>
+  <article class="media">
     <!-- this <div> includes the title summary -->
-    <div>
+    <div class="media-body">
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-      {{ .Summary }}
+      <p class="text-justify">
+        {{ .Summary }}
+      </p>
+
+      <p>
+        <a href="{{ .RelPermalink }}">Read More…</a>
+      </p>
     </div>
 
-    {{ if .Truncated }}
-    <div>
-      <a href="{{ .RelPermalink }}">Read More…</a>
-    </div>
-    {{ end }}
+    {{ with index (.Resources.ByType "image") 0}}
+      {{ $img1x := .Resize "150x" }}
+      {{ $img2x := .Resize "300x" }}
+      <img
+        class="align-self-center ml-3 img-thumbnail d-none d-md-block"
+        srcset='
+          {{- with $img1x.RelPermalink }}{{.}} 1x, {{ end -}}
+          {{- with $img2x.RelPermalink }}{{.}} 2x {{ end -}}'
+        src="{{ with $img1x.RelPermalink }}{{.}}{{ end }}">
+    {{end}}
   </article>
   {{ end }}
 
