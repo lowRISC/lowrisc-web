@@ -17,7 +17,7 @@
     <link href="{{ relURL . }}" rel="stylesheet">
   {{ end }}
 
-  {{ block "analytics" . }}{{ partial "analytics" . }}{{end}}
+  {{ template "_internal/google_analytics.html" . }}
 </head>
 
 <body>
