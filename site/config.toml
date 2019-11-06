@@ -19,6 +19,8 @@ timeout = 30000 #ms
 # Don't pluralize "blog" into "blogs" for blog list title
 pluralizeListTitles = false
 
+googleAnalytics="UA-53520714-1"
+
 [blackfriday]
 plainIDAnchors = false
 

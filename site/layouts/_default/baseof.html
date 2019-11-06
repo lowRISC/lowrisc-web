@@ -17,7 +17,10 @@
     <link href="{{ relURL . }}" rel="stylesheet">
   {{ end }}
 
-  {{ block "analytics" . }}{{ partial "analytics" . }}{{end}}
+  {{ template "_internal/google_analytics.html" . }}
+
+  {{ template "_internal/opengraph.html" . }}
+  {{ template "_internal/twitter_cards.html" . }}
 </head>
 
 <body>
