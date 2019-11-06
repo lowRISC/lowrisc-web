@@ -11,10 +11,10 @@
 
 {{ if eq $srcExt ".svg" }}
 <img
-  src="{{ with $src.Permalink }}{{.}}{{ end }}"
+  src="{{ $src.Permalink }}"
   {{ with or (.Get "alt") (.Get "title") }}alt='{{.}}' {{ end }}
   {{ with or (.Get "title") (.Get "alt") }}title='{{.}}' {{ end }}
-  width='{{- with $requestedWidth }}{{.}} {{ end -}}'
+  width='{{ $requestedWidth }}'
   class='
     {{- with .Get "class" }}{{.}} {{ end -}}
     {{- if .Get "caption" }}figure-img {{ end -}}
@@ -36,7 +36,7 @@
     srcset='
       {{- with $img1x.Permalink }}{{.}} 1x, {{ end -}}
       {{- with $img2x.Permalink }}{{.}} 2x {{ end -}}'
-    src="{{ with $img1x.Permalink }}{{.}}{{ end }}"
+    src="{{ $img1x.Permalink }}"
     {{- with or (.Get "alt") (.Get "title") }}alt='{{.}}' {{ end -}}
     {{- with or (.Get "title") (.Get "alt") }}title='{{.}}' {{ end -}}
     class='

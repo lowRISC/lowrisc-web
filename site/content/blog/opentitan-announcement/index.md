@@ -3,6 +3,8 @@ Description = ""
 date = "2019-11-05T14:00:00+00:00"
 title = "Announcing OpenTitan, the First Transparent Silicon Root of Trust"
 
+featured_image = "logo-opentitan.svg"
+
 [[resources]]
 src = "logo-opentitan.svg"
 title = "OpenTitan"
