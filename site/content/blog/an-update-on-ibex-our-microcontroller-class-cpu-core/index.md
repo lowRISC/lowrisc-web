@@ -3,6 +3,17 @@ Description = ""
 date = "2019-06-10T15:00:00+01:00"
 title = "An update on Ibex, our microcontroller-class CPU core"
 author = "Philipp Wagner"
+
+featured_image = "Ibex_block_diagram-100619.png"
+
+[[resources]]
+src = "Ibex_block_diagram-100619.png"
+title = "Ibex block diagram"
+
+[[resources]]
+src = "forte_placement.png"
+title = "University of Manchester design with Ibex core"
+
 +++
 
 At the beginning of many chips projects, there’s a dream. Could we create a more

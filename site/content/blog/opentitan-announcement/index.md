@@ -2,6 +2,14 @@
 Description = ""
 date = "2019-11-05T14:00:00+00:00"
 title = "Announcing OpenTitan, the First Transparent Silicon Root of Trust"
+
+[[resources]]
+src = "logo-opentitan.svg"
+title = "OpenTitan"
+
+[[resources]]
+src = "opentitan-rot-comparsion.svg"
+title = "Traditional RoT vs. OpenTitan"
 +++
 
 Today, we are excited to unveil the [OpenTitan](https://opentitan.org) silicon root of trust (RoT) project, a new effort built using the successful collaborative engineering model created by lowRISC in partnership with Google and other commercial and academic partners.

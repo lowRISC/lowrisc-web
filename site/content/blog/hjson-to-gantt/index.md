@@ -3,6 +3,12 @@ Description = ""
 date = "2016-10-15T10:00:00+01:00"
 title = "Generating a Gantt chart from HJSON input"
 author = "Alex Bradbury"
+
+featured_image = "gantt_example_weekly.png"
+
+[[resources]]
+src = "gantt_example_weekly.png"
+title = "Example Gantt Chart"
 +++
 
 This blog post is a slight departure from the normal topics here. Worry not,
