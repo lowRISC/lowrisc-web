@@ -3,6 +3,17 @@ Description = ""
 date = "2019-07-19T20:00:00+01:00"
 title = "Six more weeks of Ibex development - what's new?"
 
+featured_image = "ibex-cleaning-up.jpg"
+images = ["ibex-cleaning-up.jpg"]
+
+[[resources]]
+src = "ibex-cleaning-up.jpg"
+title = "Ibex cleaning up"
+
+[[resources]]
+src = "2019-07-ibex-diffstat.png"
+title = "Ibex diffstat"
+
 +++
 
 In the past months, we have invested considerable effort in improving our

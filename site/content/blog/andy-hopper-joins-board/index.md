@@ -1,6 +1,11 @@
 +++
 date = "2019-11-05T09:00:00+00:00"
 title = "Andy Hopper joins lowRISC CIC Board as Independent Chair"
+featured_image = "andy-hopper.jpg"
+
+[[resources]]
+src = "andy-hopper.jpg"
+title = "Andy Hopper"
 +++
 
 

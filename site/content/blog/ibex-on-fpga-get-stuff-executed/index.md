@@ -3,6 +3,19 @@ Description = ""
 date = "2019-10-08T16:30:00+01:00"
 title = "Ibex on FPGA - Get stuff executed"
 author = "Pirmin Vogel"
+
+featured_image = "Ibex_on_Nexys_Video.jpg"
+images = ["Ibex_on_Nexys_Video.jpg", "PULPissimo_on_Nexys_Video.png"]
+
+[[resources]]
+src = "Ibex_on_Nexys_Video.jpg"
+title = "Ibex on the Nexys Video FPGA board"
+
+[[resources]]
+src = "PULPissimo_on_Nexys_Video.png"
+title = "PULPissimo implementation on the Nexys Video FPGA board"
+
+
 +++
 
 Our microcontroller-class RISC-V processor core

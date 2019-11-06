@@ -3,6 +3,16 @@ Description = ""
 date = "2019-06-03T10:00:00+01:00"
 title = "Introducing Pirmin & Laura"
 
+images = ["pirmin_vogel.jpg", "laura_james.jpg"]
+
+[[resources]]
+src = "pirmin_vogel.jpg"
+title = "Pirmin Vogel"
+
+[[resources]]
+src = "laura_james.jpg"
+title = "Laura James"
+
 +++
 
 Pirmin Vogel and Laura James both joined lowRISC on May 1st this year. A few

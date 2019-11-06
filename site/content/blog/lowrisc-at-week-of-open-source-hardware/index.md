@@ -3,6 +3,18 @@ Description = ""
 date = "2019-06-11T16:00:00+01:00"
 title = "lowRISC at Week of Open Source Hardware"
 author = "Andrew Back"
+
+featured_image = "lowRISC_enamel_badge_640w.jpg"
+images = ["lowRISC_enamel_badge_640w.jpg"]
+
+[[resources]]
+src = "lowRISC_enamel_badge_640w.jpg"
+title = "lowRISC enamel badge"
+
+[[resources]]
+src = "WOSH_logo_640w.jpg"
+title = "WOSH logo"
+
 +++
 
 {{< img width=200 src="WOSH_logo_640w.png" class="float-right m-2" alt="WOSH logo" >}}

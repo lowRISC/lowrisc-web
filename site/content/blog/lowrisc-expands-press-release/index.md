@@ -4,6 +4,13 @@ date = "2019-05-16T17:50:00+01:00"
 title = "lowRISC Expands and Appoints New Members to the Board of Directors from Google and ETH Zurich"
 slug = "lowrisc-expands-press-release"
 
+featured_image = "board1.jpg"
+images = ["board1.jpg"]
+
+[[resources]]
+src = "board1.jpg"
+title = "lowRISC Board"
+
 +++
 
 _London, England - lowRISC C.I.C., the open source system on a chip (SoC)

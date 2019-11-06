@@ -2,6 +2,16 @@
 Description = ""
 date = "2019-10-23T10:00:00+01:00"
 title = "Introducing Greg & Tom"
+
+images = ["greg_chadwick.jpg", "tom_roberts.jpg"]
+
+[[resources]]
+src = "greg_chadwick.jpg"
+title = "Greg Chadwick"
+
+[[resources]]
+src = "tom_roberts.jpg"
+title = "Tom Roberts"
 +++
 
 _Greg Chadwick and Tom Roberts recently joined lowRISC’s growing engineering
