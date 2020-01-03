@@ -92,7 +92,7 @@ headed:
  * *Trace buffering and output* on a separate high speed port or to
    DRAM broadens the use cases of the debug system.
 
-Please [get in touch with us]({{< ref "community.md" >}}) if you have ideas 
+Please [get in touch with us]({{< ref "community" >}}) if you have ideas
 and opinions about future directions we should take. Now
 it's time to learn more about the debug system or jump into using it:
 

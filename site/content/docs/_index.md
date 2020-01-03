@@ -9,7 +9,7 @@ title = "Documentation"
 
 This page is an index to documentation for our 64-bit RISC-V SoC platform.
 We'll be refreshing with further pointers to documentation for our [other
-projects]({{< ref "our-work.md" >}}).
+projects]({{< ref "our-work" >}}).
 
 These SoC platform code releases and documentation have the aim of easing the path of new users and students,
 providing a robust tested platform for research into computer architecture,

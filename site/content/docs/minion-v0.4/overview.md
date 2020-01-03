@@ -116,7 +116,7 @@ programmable 'shim' that would allow minions to be used in a flexible way for
 programmable IO, to have the minion control the boot process, and to stabilise
 the interface between the minion and application cores.
 
-Please [get in touch with us]({{< ref "community.md" >}}) if you have ideas 
+Please [get in touch with us]({{< ref "community" >}}) if you have ideas
 and opinions about future directions we should take. Now
 it's time to learn more about the debug system or jump into using it:
 

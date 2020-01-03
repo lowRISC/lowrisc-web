@@ -40,7 +40,7 @@ This release incorporates a JTAG core for the first time, but there is of
 course much more to be done. The top priority is making GDB/openocd cognisant of the
 different virtual memory features offered in the different modes.
 
-Please [get in touch with us]({{< ref "community.md" >}}) if you have ideas 
+Please [get in touch with us]({{< ref "community" >}}) if you have ideas
 and opinions about future directions we should take.
 
 Continue the process below:

@@ -36,7 +36,7 @@ course much more to be done. In the future, we want to integrate support for int
 I/O, to have the ethernet control the boot process, perhaps with tftp, and to optimise
 the interface between the ethernet and application cores (for example with DMA).
 
-Please [get in touch with us]({{< ref "community.md" >}}) if you have ideas 
+Please [get in touch with us]({{< ref "community" >}}) if you have ideas
 and opinions about future directions we should take. Now
 it's time to learn more about the debug system or jump into using it:
 
