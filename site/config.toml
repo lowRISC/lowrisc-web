@@ -22,7 +22,7 @@ plainIDAnchors = false
 [permalinks]
 blog="/blog/:year/:month/:slug"
 
-# Turn of RSS except for home
+# Turn off RSS except for home
 [outputs]
 home = ["html", "RSS"]
 section = ["html"]
