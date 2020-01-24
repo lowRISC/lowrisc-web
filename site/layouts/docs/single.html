@@ -1,0 +1,11 @@
+{{/*
+  This template is used for documentation content pages, while section.html
+  is used for _index.md pages. Almost identical to the default template, but
+  adds the title.
+*/}}
+{{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
+<div class="container">
+  <h1>{{ .Title }}</h1>
+  {{- .Content -}}
+</div>
+{{ end }}
