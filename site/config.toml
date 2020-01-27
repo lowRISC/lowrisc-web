@@ -11,8 +11,8 @@ disableHugoGeneratorInject = true
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["taxonomy", "taxonomyTerm"]
 
-# Don't fail build if links are broken, only warn.
-refLinksErrorLevel = "WARNING"
+# Fail if links are broken. Switch to WARNING to only warn about it.
+refLinksErrorLevel = "ERROR"
 
 timeout = 30000 #ms
 
