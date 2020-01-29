@@ -1,6 +1,7 @@
 +++
 date = "2020-01-29T15:00:00+00:00"
 title = "At FOSDEM you can hear how we made our Ibex CPU core faster"
+author = "Greg Chadwick"
 
 featured_image = "FOSDEM_logo.png"
 images = ["FOSDEM_logo.png"]
