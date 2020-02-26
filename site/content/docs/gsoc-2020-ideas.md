@@ -73,7 +73,7 @@ software libs.
 
 ## Open source logic analyser IP for FPGA
 
-**Sumary:** Build a [sigrok](https://sigrok.org/) compatible logic analyser
+**Summary:** Build a [sigrok](https://sigrok.org/) compatible logic analyser
 that can be used in FPGA.
 
 Sigrok is an open source software suite for signal
@@ -86,7 +86,7 @@ config file for the GUI tool to give you signal names etc
 
 ## Implement the bit manipulation extension for Ibex
 
-**Sumary:** Implement support for the proposed [RISC-V bit manipulation
+**Summary:** Implement support for the proposed [RISC-V bit manipulation
 extension](https://github.com/riscv/riscv-bitmanip) in
 [Ibex](https://github.com/lowrisc/ibex).
 
