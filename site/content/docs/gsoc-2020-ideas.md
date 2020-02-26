@@ -76,13 +76,23 @@ software libs.
 **Summary:** Build a [sigrok](https://sigrok.org/) compatible logic analyser
 that can be used in FPGA.
 
-Sigrok is an open source software suite for signal
-analysis, it supports a wide range of devices We could build a sigrok
-compatible logic analyser that can be used in FPGA (and potentially ASIC). For
-bonus points implement something using an existing verilog parsing framework
-that can let you choose signals from your hierarchy and it auto-generates the
-logic analyser instantiation with hierarchical paths for you plus a nice
-config file for the GUI tool to give you signal names etc 
+FPGA vendors such as Altera and Xilinx have proprietary logic analyser
+generators that can be used for FPGA debug. They allow configuration of a wide
+number of parameters, such as signal widths, depth of buffering and possible
+triggering modes (from a simple edge trigger to more complex conditions
+involving multiple signals over several cycles).
+
+Sigrok is an open source software suite for signal analysis, it supports a wide
+range of devices. This project would build an open source logic analyser
+generator with similar capabilities to existing proprietary solutions that is
+compatible with Sigrok. The focus would be on use for FPGA debug but it could
+also be used with external IO to produce a 'traditional' logic analyser or be
+embedded in an ASIC for post-silicon debug.
+
+By combining the generator with an existing verilog parsing framework a user
+friendly front end could be created. This would allow a designer to select the
+signals they want to capture and the necessary logic analyser would be
+generated with all the required wiring to feed to signals into the analyser.
 
 ## Implement the bit manipulation extension for Ibex
 
