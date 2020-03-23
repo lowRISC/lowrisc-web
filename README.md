@@ -11,7 +11,7 @@ You need to install node.js and yarn on your machine. (Note: you do not need to
 install Hugo manually, it will be installed with yarn later.)
 
 - [nodejs](https://nodejs.org/en/download/)
-- [yarn](https://nodejs.org/en/download/)
+- [yarn](https://classic.yarnpkg.com/en/docs/install/)
 
 ### Download all frontend dependencies
 
@@ -50,10 +50,29 @@ yarn preview
 A static version of the web site can be built with:
 
 ```bash
-yarn build
+yarn build-production
 ```
 
-The output will live at `/dist`.
+This will produce the following expected warnings:
+```
+WARNING in unable to locate 'src/fonts/' at 'lowrisc-web/src/fonts'
+
+WARNING in entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  main (258 KiB)
+      main.e2036.css
+      main.e2036.js
+
+
+WARNING in webpack performance recommendations:
+You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+For more info visit https://webpack.js.org/guides/code-splitting/
+```
+
+Please check the build output by opening `dist/index.html` in your web browser.
+If the result does not look as expected, it is recommended to delete the whole `dist` folder and rebuild using `yarn build-production`.
+
+Finally, the whole build output, i.e., the content of `dist`, needs to be copied over to the actual website repo living in [https://github.com/lowRISC/lowrisc.github.io](https://github.com/lowRISC/lowrisc.github.io).
 
 ## Frontend Processing Pipeline
 
