@@ -3,14 +3,18 @@ date = "2020-02-05T15:12:36Z"
 title = "lowRISC project ideas for GSoC 2020"
 +++
 
-lowRISC has applied to take part in the [2020 Google Summer of
-Code](https://summerofcode.withgoogle.com/) as a mentoring 
-organisation. See the [full program 
+lowRISC has been accepted as a mentoring organisation for the [2020 Google
+Summer of Code](https://summerofcode.withgoogle.com/). See the [full program
 timeline](https://summerofcode.withgoogle.com/how-it-works/#timeline) for a 
 run-down of key dates.
 
-If you want feedback on ideas, you're best posting to info@lowrisc.org or
-discussing [on our Zulip group chat](https://lowrisc.zulipchat.com).
+Before submitting your application, please get in contact with us on [our
+Zulip group chat](https://lowrisc.zulipchat.com) or send an email to potential
+mentors. We are keen to start discussing potential projects with you.
+
+For guidance on how to write the application, please check out the [GSoC
+student guide]
+(https://google.github.io/gsocguides/student/writing-a-proposal#the-basics).
 
 # Project ideas (in no particular order)
 
@@ -34,6 +38,9 @@ may involve making suggestions for refactorings to make this an easier task.
 The project would ideally involve addressing the challenge of keeping the
 example/template project functional.
 
+Mentors: [Alex](mailto:asb@lowrisc.org), [Greg](mailto:gac@lowrisc.org),
+[Pirmin](mailto:vogelpi@lowrisc.org)
+
 ## Custom compressed instruction set generation
 
 **Summary:** Create a flow that can generate a custom compressed instruction
@@ -46,6 +53,10 @@ size. The tool would generate the necessary instruction descriptions for LLVM
 as well as the decode logic for the Ibex CPU core. There is a wealth of
 additional research ideas on further reducing code size that may also be
 interesting to explore in the context of this project.
+
+Mentors: [Alex](mailto:asb@lowrisc.org), [Luís]
+(mailto:luismarques@lowrisc.org), [Sam](mailto:selliott@lowrisc.org),
+[Silvestrs](mailto:silvestrst@lowrisc.org)
 
 ## OpenTitan SoC tooling work
 
@@ -61,15 +72,22 @@ engineers to implement new features. e.g. it may be interesting to extend the
 vendor tool to allow the extraction of a specific piece of IP from the
 OpenTitan repository and its dependencies.
 
+Mentors: [Sam](mailto:selliott@lowrisc.org), [Silvestrs]
+(mailto:silvestrst@lowrisc.org)
+
 ## Create an Ibex-based SoC platform for iCE40 UltraPlus FPGA devices
 
-**Summary:** Create an Ibex-based demonstration platform using fully open
-tools.
+**Summary:** Create an Ibex-based demonstration platform using [IceStorm]
+(http://www.clifford.at/icestorm/), the fully open source
+Verilog-to-bitstream flow for iCE40 FPGAs .
 
-This necessarily involves porting the core, making sure it fits and reasonably
-maps. Then adding memory, timer, UART, SPI (leveraging + adapting existing
-IP). Finally, creation of the SoC infrastructure: toolchain, linker script,
-software libs.
+This project necessarily involves porting the [Ibex]
+(https://github.com/lowRISC/ibex) core to the IceStorm flow, making sure it
+fits and reasonably maps to iCE40 FPGAs. Then adding memory, timer, UART,
+SPI (leveraging + adapting existing IP). Finally, creation of the SoC
+infrastructure: toolchain, linker script, software libs.
+
+Mentors: [Greg](mailto:gac@lowrisc.org), [Pirmin](mailto:vogelpi@lowrisc.org)
 
 ## Open source logic analyser IP for FPGA
 
@@ -94,14 +112,32 @@ friendly front end could be created. This would allow a designer to select the
 signals they want to capture and the necessary logic analyser would be
 generated with all the required wiring to feed to signals into the analyser.
 
-## Implement the bit manipulation extension for Ibex
+Mentors: [Greg](mailto:gac@lowrisc.org), [Pirmin](mailto:vogelpi@lowrisc.org),
+[Luís](mailto:luismarques@lowrisc.org)
 
-**Summary:** Implement support for the proposed [RISC-V bit manipulation
-extension](https://github.com/riscv/riscv-bitmanip) in
-[Ibex](https://github.com/lowrisc/ibex).
+## Proof-of-concept integration of pointer authentication support in Ibex
 
-As well as the RTL implementation, an important part of this project will be
-to deliver a workable testing strategy.
+**Summary:** Extend the processor pipeline of [Ibex]
+(https://github.com/lowrisc/ibex) with instructions to generate and
+check pointer authentication codes.
+
+[Pointer Authentication]
+(https://www.usenix.org/system/files/sec19fall_liljestrand_prepub.pdf) uses
+cryptographic message authentication codes (MACs) both generated and
+authenticated at runtime to protect the integrity of
+pointers in order to aggravate attacks targeting arbitrary code execution
+through malicious manipulation of code and data pointers. This project aims
+at doing a proof-of-concept integration of pointer authentication
+into Ibex.
+
+For this project, the actual MAC is considered a black box of configurable
+latency. The focus lies on integrating pointer authentication into the
+processor pipeline. To this end, new custom instructions need to be added to
+generate and authenticate pointers based on the value of the PC, SP and a
+secret key (including exception handling if authentication fails).
+
+Mentors: [Pirmin](mailto:vogelpi@lowrisc.org), [Sam]
+(mailto:selliott@lowrisc.org), [Luís](mailto:luismarques@lowrisc.org)
 
 ## "Simulated" memory controller
 
@@ -118,3 +154,4 @@ smaller amount. The solution is to have a simulation-ready memory controller
 that will produce delays much closer to a system where the memory interface is 
 running at a much slower speed.
 
+Mentors: [Alex](mailto:asb@lowrisc.org), [Pirmin](mailto:vogelpi@lowrisc.org)
