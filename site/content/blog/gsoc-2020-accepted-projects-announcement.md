@@ -4,7 +4,7 @@ title = "GSoC Accepted Projects Announcement"
 author = "Sam Elliott and Pirmin Vogel"
 +++
 
-We are pleased to announce that we will be mentoring two students as part of Google Summer of Code](https://summerofcode.withgoogle.com/) (GSoC).
+We are pleased to announce that we will be mentoring two students as part of [Google Summer of Code](https://summerofcode.withgoogle.com/) (GSoC).
 
 We are looking forward to working with Flavien and Yuichi on features and tools to improve IP such as Ibex, our open-source RISC-V core.
 
