@@ -1,5 +1,5 @@
 +++
-date = "2020-09-09T15:00:00+00:00"
+date = "2020-09-14T17:00:00+00:00"
 title = "GSoC Projects Successfully Completed"
 author = "Pirmin Vogel, Sam Elliott, and Greg Chadwick"
 +++
