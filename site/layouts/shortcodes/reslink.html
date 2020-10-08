@@ -1,0 +1,4 @@
+{{/* Produce a link to the named resource in the current page bundle */}}
+
+{{ $dest := $.Page.Resources.GetMatch (.Get 0)}}
+<a href="{{ $dest.RelPermalink }}">{{ (.Get 1) }}</a>
