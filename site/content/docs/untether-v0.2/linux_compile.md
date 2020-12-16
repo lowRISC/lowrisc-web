@@ -1,7 +1,7 @@
 +++
 Description = ""
 date = "2016-06-10T16:00:00+00:00"
-title = "Compile the RISC-V Linux and the ramdisk `root.bin`"
+title = "Compile the RISC-V Linux and the ramdisk root.bin"
 parent = "/docs/untether-v0.2/dev-env/"
 prev = "/docs/untether-v0.2/riscv_compile/"
 showdisqus = true
@@ -12,8 +12,7 @@ showdisqus = true
 ### RISC-V Linux
 
 The Linux kernel can be simulated using Spike or booted on an FPGA. To
-compile your own Linux kernel, use the following script (more instructions
-can be found [here](https://github.com/riscv/riscv-linux#linuxrisc-v):
+compile your own Linux kernel, use the following script:
 
     # set up the RISCV environment variables
     cd $TOP/riscv-tools
@@ -35,7 +34,7 @@ After the compilation, you should be able to find the Linux kernel image:
 <a name="busybox"></a>
 ### Ramdisk `root.bin` (busybox)
 
-[BusyBox](www.busybox.net) is used in the root image to provide the
+[BusyBox](https://busybox.net) is used in the root image to provide the
 basic shell environment. To build your own root image, the BusyBox
 binary must be generated at first:
 
@@ -60,4 +59,4 @@ More details can be found [here](https://github.com/riscv/riscv-tools).
 ### Test images in Spike
 
 Now it should be possible to boot Linux in Spike. See [Booting RISC-V 
-Linux](../spike#spike-boot).
+Linux](spike.md).
