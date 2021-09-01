@@ -2,6 +2,7 @@
   YARN_VERSION = "1.17.3"
   NPM_VERSION = "6.4.1"
   HUGO_VERSION = "0.59.0"
+  NODE_VERSION = "12"
 
 [build]
   command = "yarn run build"
