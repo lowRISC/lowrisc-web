@@ -21,3 +21,10 @@
   // Ensure all blog images are responsive: only as wide as the viewport
   @include img-fluid;
 }
+
+blockquote {
+  font-size: 150%;
+  text-align: center;
+  color: DimGrey;
+  font-style: italic;
+}
