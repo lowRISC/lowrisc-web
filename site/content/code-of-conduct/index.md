@@ -90,8 +90,8 @@ In general, it is not appropriate to appeal a particular decision on a public ma
 ## Members of the Code of Conduct team
 The members serving on the advisory committee are listed here in case you are more comfortable talking directly to a specific member of the committee.
 
-* Alex Bradbury
 * Gavin Ferris
+* Robert Mullins
 
 # Attributions
 This text is based on the [LLVM Code of Conduct](https://llvm.org/docs/CodeOfConduct.html), which is based on the [Django Project Code of Conduct](https://www.djangoproject.com/conduct/), which is in turn based on wording from the [Speak Up! project](http://speakup.io/coc.html).
