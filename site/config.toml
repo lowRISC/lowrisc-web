@@ -18,6 +18,9 @@ timeout = 30000 #ms
 
 googleAnalytics="UA-53520714-1"
 
+[security.funcs]
+getenv = ['^HUGO_', 'CONTEXT']
+
 [blackfriday]
 plainIDAnchors = false
 
