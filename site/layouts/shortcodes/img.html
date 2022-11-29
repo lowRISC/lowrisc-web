@@ -21,7 +21,7 @@
   '
 >
 {{ else }}
-  {{ $img := imageConfig (printf "content/%s/%s" $.Page.Dir $src ) }}
+  {{ $img := imageConfig (printf "content/%s/%s" $.Page.File.Dir $src ) }}
   {{ $width := $requestedWidth }}
 
   {{/* Do not upscale image in 1x version. */}}
