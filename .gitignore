@@ -1,4 +1,5 @@
 node_modules/
 dist/
 site/data/webpack.json
+site/public/
 site/resources/
