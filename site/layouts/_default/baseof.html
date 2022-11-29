@@ -12,10 +12,9 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
   {{ end -}}
 
-  {{ $stylesheet := .Site.Data.webpack.main }}
-  {{ with $stylesheet.css }}
-    <link href="{{ relURL . }}" rel="stylesheet">
-  {{ end }}
+  {{ $scss_options := (dict "includePaths" (slice "assets/scss/" "assets/bootstrap/") "outputStyle" "compressed") }}
+  {{ $stylesheet := resources.Match "scss/*.scss" | resources.Concat "main.css" | toCSS $scss_options }}
+  <link href="{{ $stylesheet.RelPermalink }}" rel="stylesheet">
 
   {{ template "_internal/google_analytics.html" . }}
 </head>
@@ -29,11 +28,6 @@
   </main>
 
   {{ block "footer" . }}{{ partial "footer" . }}{{end}}
-
-  {{ $script := .Site.Data.webpack.main }}
-  {{ with $script.js }}
-    <script src="{{ relURL . }}"></script>
-  {{ end }}
 </body>
 
 </html>

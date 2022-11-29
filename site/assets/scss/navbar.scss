@@ -1,0 +1,30 @@
+// Copyright lowRISC contributors.
+// Licensed under the Apache License, Version 2.0, see LICENSE for details.
+// SPDX-License-Identifier: Apache-2.0
+
+@import "variables";
+
+// Main navigation bar (top) styling
+
+// Color of the navigation bar links
+$navbar-light-color: $color-lowrisc-logogrey;
+
+// spacing between items in navigation bar
+$navbar-nav-link-padding-x: 1rem;
+
+// Navigation bar height
+$navbar-padding-y: .7rem;
+
+.navbar-brand img {
+  width: 150px;
+}
+.navbar-nav {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.lr-navbar-btn-gh {
+  @include button-outline-variant($color-lowrisc-pink);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
