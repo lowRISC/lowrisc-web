@@ -7,10 +7,10 @@ This repository contains the source code of the lowRISC website.
 Build the site for production with the following command:
 
 ```sh
-hugo -s site --minify --baseURL 'https://www.lowrisc.org'
+hugo --minify --baseURL 'https://www.lowrisc.org'
 ```
 
-Output files will go into the `site/public/` directory which can then be copied
+Output files will go into the `public/` directory which can then be copied
 to the actual website repo at <https://github.com/lowRISC/lowrisc.github.io>.
 Eventually this step should be automated by CI.
 
@@ -27,13 +27,13 @@ Hugo will trigger rebuilds and automatically refresh your webpage when files
 change.
 
 ```sh
-hugo server -s site
+hugo server
 ```
 
 Hugo supports marking content as [draft or future content][hugo-draft-future].
 To preview this content, run Hugo with the `-D` and `-F` flags:
 
-hugo server -s site -D -F
+hugo server -D -F
 
 [hugo-draft-future]: https://gohugo.io/getting-started/usage/#draft-future-and-expired-content
 

@@ -2,8 +2,8 @@
 HUGO_VERSION = "0.59.0"
 
 [build]
-command = "hugo -s site"
-publish = "site/public"
+command = "hugo"
+publish = "public"
 
 [context.deploy-preview]
-command = "hugo -s site -b $DEPLOY_PRIME_URL"
+command = "hugo -b $DEPLOY_PRIME_URL"
