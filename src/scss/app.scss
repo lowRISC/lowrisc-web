@@ -4,9 +4,35 @@
 
 @import "variables";
 
-@import url('https://fonts.googleapis.com/css?family=Exo+2:400,700|Source+Sans+Pro:400,700&display=swap');
-
 @import "~bootstrap/scss/bootstrap";
+
+@font-face {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Exo 2'), url('/fonts/Exo_2/Exo2-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Exo 2'), url('/fonts/Exo_2/Exo2-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Source Sans Pro'), url('/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Source Sans Pro'), url('/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf') format('truetype');
+}
 
 @import "content";
 @import "navbar";
