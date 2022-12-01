@@ -16,8 +16,6 @@ refLinksErrorLevel = "ERROR"
 
 timeout = 30000 #ms
 
-googleAnalytics="UA-53520714-1"
-
 [blackfriday]
 plainIDAnchors = false
 
