@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <title>{{block "title" . }}{{.Title}} &middot; {{ $.Site.Title }}{{end}}</title>
+
+  {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+  {{ $scss_options := (dict "includePaths" (slice "assets/scss/" "assets/bootstrap/") "outputStyle" "compressed") }}
+  {{ $stylesheet := resources.Match "scss/*.scss" | resources.Concat "main.css" | toCSS $scss_options }}
+  <link href="{{ $stylesheet.RelPermalink }}" rel="stylesheet">
+
+  {{ template "_internal/google_analytics.html" . }}
+</head>
+
+<body>
+
+  {{ block "header" . }}{{ partial "header" . }}{{end}}
+
+  <main role="main">
+  {{ block "main" . }}{{end}}
+  </main>
+
+  {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+</body>
+
+</html>

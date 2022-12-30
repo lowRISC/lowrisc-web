@@ -1,0 +1,52 @@
+{{/* Render a img tag with a version of the image downscaled to |width| */}}
+{{ $src := .Page.Resources.GetMatch (printf "*%s*" (.Get "src")) }}
+
+{{ $requestedWidth := or (.Get "width") 500 }}
+
+{{ $srcExt := path.Ext $src }}
+
+{{ if (.Get "caption") }}
+  <figure class='figure {{- with .Get "figure-class" }}{{.}}{{ end -}}'>
+{{ end }}
+
+{{ if eq $srcExt ".svg" }}
+<img
+  src="{{ $src.Permalink }}"
+  {{ with or (.Get "alt") (.Get "title") }}alt='{{.}}' {{ end }}
+  {{ with or (.Get "title") (.Get "alt") }}title='{{.}}' {{ end }}
+  width='{{ $requestedWidth }}'
+  class='
+    {{- with .Get "class" }}{{.}} {{ end -}}
+    {{- if .Get "caption" }}figure-img {{ end -}}
+  '
+>
+{{ else }}
+  {{ $img := imageConfig (printf "content/%s/%s" $.Page.File.Dir $src ) }}
+  {{ $width := $requestedWidth }}
+
+  {{/* Do not upscale image in 1x version. */}}
+  {{ if gt $requestedWidth $img.Width }}
+    {{ $width = $img.Width }}
+  {{ end }}
+
+  {{ $img1x := $src.Resize ($width | printf "%dx") }}
+  {{ $img2x := $src.Resize ((mul 2 $width) | printf "%dx") }}
+
+  <img
+    srcset='
+      {{- with $img1x.Permalink }}{{.}} 1x, {{ end -}}
+      {{- with $img2x.Permalink }}{{.}} 2x {{ end -}}'
+    src="{{ $img1x.Permalink }}"
+    {{- with or (.Get "alt") (.Get "title") }}alt='{{.}}' {{ end -}}
+    {{- with or (.Get "title") (.Get "alt") }}title='{{.}}' {{ end -}}
+    class='
+      {{- with .Get "class" }}{{.}} {{ end -}}
+      {{- if .Get "caption" }}figure-img {{ end -}}
+    '
+  >
+{{ end }}
+
+{{ if (.Get "caption") }}
+    <figcaption class="figure-caption">{{ with .Get "caption" }}{{.}}{{ end }}</figcaption>
+  </figure>
+{{ end }}
