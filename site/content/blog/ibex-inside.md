@@ -1,5 +1,5 @@
 +++
-date = "2023-07-17T18:00:00+00:00"
+date = "2023-07-17T16:30:00+00:00"
 title = "Ibex Inside: How and Why We Built OpenTitan’s RISC-V Core"
 author = "Greg Chadwick"
 +++
