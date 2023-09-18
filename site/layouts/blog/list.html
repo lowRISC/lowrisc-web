@@ -8,6 +8,7 @@
     <!-- this <div> includes the title summary -->
     <div class="media-body">
       <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <h5><time>{{ .PublishDate.Format "January 2, 2006" }}</time></h5>
       <p class="text-justify">
         {{ .Summary }}
       </p>
