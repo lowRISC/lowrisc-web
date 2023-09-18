@@ -2,6 +2,11 @@
 date = "2023-09-12T14:00:00+00:00"
 title = "lowRISC Extends UKRI’s Digital Security by Design Programme Support Into Operational Technology"
 slug = "dsbd-cheriot-announcement"
+featured_image = "eev-diagram.png"
+
+[[resources]]
+src = "eev-diagram.png"
+title = "OpenTitan"
 +++
 
 
@@ -30,3 +35,9 @@ As noted, lowRISC will deliver two prototype platforms: one centred around the e
 We are seeking input from interested parties on the requirements for the BV. In particular we are interested to hear about peripherals and interfaces that would be useful to those seeking to evaluate CHERIoT for use with their applications. See [tinyurl.com/cheriot-fpga-board](http://tinyurl.com/cheriot-fpga-board) for more details. Please send your feedback to [cheriot-bv-reqs@lowrisc.org](mailto:cheriot-bv-reqs@lowrisc.org)
 
 All board designs, RTL, and firmware will be provided as permissively licensed open source to maximise their impact and reach, and the project will be completed by the end of 2024. The deliverables and outputs from this project will help fulfil the objectives of DSbD to “transform digital technology and create a more resilient, and secure foundation for a safer future.” Through lowRISC’s deliverables,  the next generation of secure-by-design electronic devices — in the challenging domain of OT —  can be further researched, developed and commercialised, and better yet, because of the project’s open-source nature, this can be done without the material barriers to entry that are normally associated with disruptive hardware technologies.
+
+The diagram below illustrates the intended design of the EEV.
+Note this is an early diagram and the CHERIoT Ibex side may look different in the finished version (in particular the set of peripherals provided).
+The OpenTitan Earl Grey side will remain fixed as we are leveraging the existing high-quality verified design.
+
+{{< img class="mx-auto d-block rounded img-fluid" width=1099 src="eev-diagram.png" title="Diagram of the EEV" >}}
