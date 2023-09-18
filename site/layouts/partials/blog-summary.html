@@ -1,0 +1,33 @@
+<article class="media">
+  <!-- this <div> includes the title summary -->
+  <div class="media-body">
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    <h5><time>{{ .PublishDate.Format "January 2, 2006" }}</time></h5>
+    <p class="text-justify">
+      {{ .Summary }}
+    </p>
+
+    <p>
+      <a href="{{ .RelPermalink }}">Read More…</a>
+    </p>
+  </div>
+
+  {{ with .Resources.GetMatch (printf "*%s*" .Params.featured_image) }}
+    {{ if eq (path.Ext .) ".svg"}}
+      <img src="{{.Permalink}}"
+        alt="{{.Title}}" title="{{.Title}}"
+        class="align-self-center ml-3 d-none d-md-block"
+        width="150">
+    {{ else }}
+      {{ $img1x := .Resize "150x" }}
+      {{ $img2x := .Resize "300x" }}
+      <img
+        class="align-self-center rounded ml-3 d-none d-md-block"
+        alt="{{.Title}}" title="{{.Title}}"
+        srcset='
+          {{- with $img1x.RelPermalink }}{{.}} 1x, {{ end -}}
+          {{- with $img2x.RelPermalink }}{{.}} 2x {{ end -}}'
+        src="{{ with $img1x.RelPermalink }}{{.}}{{ end }}">
+    {{end}}
+  {{end}}
+</article>
