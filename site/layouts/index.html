@@ -13,17 +13,22 @@
   </div>
 </div>
 
-<div class="container lr-blog lr-blog-list">
-  {{ range first 1 .Paginator.Pages }}
-  {{ partial "blog-summary.html" . }}
+<section class="container">
+  <h2>Latest News</h2>
+  <div class="lr-latest-news">
+  {{ range first 5 .Paginator.Pages }}
+    <time>{{ .PublishDate.Format "2 Jan 2006" }}</time>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
   {{end}}
-</div>
+  </div>
+</section>
 
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
   <div class="container lr-home-marketing">
+    <hr class="featurette-divider">
 
     <!-- Three columns of text below the carousel -->
     <div class="row">
