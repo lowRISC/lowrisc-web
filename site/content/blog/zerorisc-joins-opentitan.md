@@ -33,7 +33,7 @@ Its adherence to Kerckhoff's principle stands in sharp contrast to closed RoT im
 To learn more about zeroRISC and its involvement in the OpenTitan project, visit: [https://zerorisc.com/](https://zerorisc.com/).
 
 ### About lowRISC
-Founded in 2018 at the University of Cambridge Computer Lab, lowRISC is a not-for-profit company/CIC that provides a neutral home for collaborative engineering to develop and maintain open source silicon designs and tools for the long term.
+Founded in 2014 at the University of Cambridge Computer Lab, lowRISC is a not-for-profit company/CIC that provides a neutral home for collaborative engineering to develop and maintain open source silicon designs and tools for the long term.
 The lowRISC not-for-profit structure combined with full stack engineering capabilities in-house enables lowRISC to manage high quality projects like OpenTitan.
 
 ### About zeroRISC

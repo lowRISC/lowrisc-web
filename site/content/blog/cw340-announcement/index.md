@@ -39,7 +39,7 @@ The [Bergen Board](https://www.mouser.co.uk/ProductDetail/NewAE/NAE-CW310-K410T-
 
 ### About lowRISC
 
-Founded in 2018 at the University of Cambridge Computer Lab, lowRISC is a not-for-profit company/CIC that provides a neutral home for collaborative engineering to develop and maintain open source silicon designs and tools for the long term. The lowRISC not-for-profit structure combined with full stack engineering capabilities in-house enables lowRISC to manage high quality projects like OpenTitan.
+Founded in 2014 at the University of Cambridge Computer Lab, lowRISC is a not-for-profit company/CIC that provides a neutral home for collaborative engineering to develop and maintain open source silicon designs and tools for the long term. The lowRISC not-for-profit structure combined with full stack engineering capabilities in-house enables lowRISC to manage high quality projects like OpenTitan.
 
 ### Media Contact:
 lowRISC@w2comm.com
