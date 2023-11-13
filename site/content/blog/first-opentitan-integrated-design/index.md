@@ -2,6 +2,10 @@
 date = "2023-11-13T00:00:00+00:00"
 title = "OpenTitan® Partnership Announces First Public Secure Execution Environment for Integrated"
 slug = "first-opentitan-integrated-design"
+
+[[resources]]
+src = "top_darjeeling_block_diagram.svg"
+title = "OpenTitan Darjeeling Block Diagram"
 +++
 
 *Open Silicon Coalition Rapidly Develops Integrated Secure Execution Environment with the Silicon Commons Ecosystem*
@@ -9,6 +13,10 @@ slug = "first-opentitan-integrated-design"
 **CAMBRIDGE, England and BOSTON – November 13, 2023** – [lowRISC C.I.C.](https://lowrisc.org/), the open silicon ecosystem organization, and [zeroRISC](https://zerorisc.com/), the first provider of commercial cloud security services for open silicon, today announced the early release of the first SoC secure execution environment, including root of trust (RoT) functionality, as part of the OpenTitan project.
 This major milestone comes only six months after the tapeout of OpenTitan's first discrete design, demonstrating significant momentum for all participating partners.
 The design was developed with contributions from partners including Google, Winbond, Rivos, Giesecke+Devrient and zeroRISC and is now available under the permissive Apache 2 license for further innovation and exploitation, lowering the cost of core silicon security technology.
+
+{{< img src="top_darjeeling_block_diagram.svg" width=700 class="d-block align-middle img-fluid mx-auto" alt="OpenTitan Darjeeling Block Diagram" >}}
+
+*<p style="text-align: center;">OpenTitan [Darjeeling](https://opentitan.org/book/hw/top_darjeeling/doc/datasheet.html) Block Diagram</p>*
 
 Since 2018, the OpenTitan coalition has been focused on creating an open silicon ecosystem by consistently following a well-defined roadmap from discrete to integrated secure silicon designs.
 The project partners are deeply engaged in this process, ensuring that the final designs are adaptable to many applications.
