@@ -20,7 +20,7 @@ timeout = 30000 #ms
 plainIDAnchors = false
 
 [permalinks]
-blog="/blog/:year/:month/:slug"
+news="/news/:year/:month/:slug"
 
 # Turn off RSS except for home
 [outputs]
@@ -50,8 +50,8 @@ taxonomy = ["html"]
   weight = 21
 
 [[menu.main]]
-  url = "/blog"
-  name = "Blog"
+  url = "/news"
+  name = "News"
   weight = 30
 
 [[menu.main]]
