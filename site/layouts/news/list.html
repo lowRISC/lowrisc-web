@@ -1,7 +1,7 @@
 {{ define "title" }}lowRISC News &middot; {{ $.Site.Title }}{{end}}
 {{ define "main" }} {{ $section := .Site.GetPage "section" .Section }}
 <div class="container lr-blog lr-blog-list">
-  <h1>The lowRISC blog</h1>
+  <h1>lowRISC News</h1>
 
   {{ range .Paginator.Pages }}
   {{ partial "news-summary.html" . }}
