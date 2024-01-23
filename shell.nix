@@ -3,5 +3,5 @@
 # SPDX-License-Identifier: Apache-2.0
 {pkgs ? import <nixpkgs> {}}:
 pkgs.mkShell {
-  nativeBuildInputs = with pkgs; [python310 yarn];
+  nativeBuildInputs = with pkgs; [yarn];
 }
