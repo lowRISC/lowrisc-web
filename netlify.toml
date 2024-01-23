@@ -1,8 +1,8 @@
 [build.environment]
-  YARN_VERSION = "1.17.3"
-  NPM_VERSION = "6.4.1"
+  YARN_VERSION = "1.12.19"
+  NPM_VERSION = "8.19.4"
   HUGO_VERSION = "0.59.0"
-  NODE_VERSION = "12"
+  NODE_VERSION = "16"
 
 [build]
   command = "yarn run build"

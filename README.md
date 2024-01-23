@@ -13,8 +13,6 @@ install Hugo manually, it will be installed with yarn later.)
 - [nodejs](https://nodejs.org/en/download/)
 - [yarn](https://classic.yarnpkg.com/en/docs/install/)
 
-As a transitive dependency, you also need Python <=3.10 installed.
-
 ### Download all frontend dependencies
 
 Before you can get started, you need to download all frontend dependencies
