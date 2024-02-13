@@ -64,7 +64,7 @@ Seagate considers this high-quality security IP a key enabler of both enhanced s
 "With G+D's trusted embedded operating systems pre-integrated on OpenTitan coupled with our broad portfolio of IoT and connectivity solutions, we are excited for the opportunity this provides us to support customers and projects in this emerging ecosystem."
 
 The OpenTitan coalition continues to work in unison to accelerate the project's momentum.
-Upcoming key milestones include the full production release of the "[Darjeeling](https://github.com/lowRISC/opentitan/tree/integrated_dev)" integrated OpenTitan secure extension environment (SEE) and the first production release of 'Chai,' the integrated OpenTitan SEE with support for secure external flash.
+Upcoming key milestones include the full production release of the "[Darjeeling](https://github.com/lowRISC/opentitan/tree/integrated_dev)" integrated OpenTitan secure execution environment (SEE) and the first production release of 'Chai,' the integrated OpenTitan SEE with support for secure external flash.
 In addition, the project will release an updated discrete "[EarlGrey](https://opentitan.org/book/hw/top_earlgrey/)" chip design, with additional coverage and development.
 
 ## About lowRISC 
