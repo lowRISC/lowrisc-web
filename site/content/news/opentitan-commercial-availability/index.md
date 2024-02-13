@@ -1,9 +1,9 @@
 +++
 date = "2024-02-13T00:00:00+00:00"
 title = "OpenTitan® Partnership Makes History as First Open-Source Silicon Project to Reach Commercial Availability"
-slug = "opentitan-commercial-viability"
+slug = "opentitan-commercial-availability"
 
-aliases = "/blog/2024/02/opentitan-commercial-viability/"
+aliases = "/news/2024/02/opentitan-commercial-viability/"
 
 [[resources]]
 src = "silicon.png"
